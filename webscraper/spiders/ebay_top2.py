@@ -8,8 +8,8 @@ header = Headers(browser="chrome",  # Generate only Chrome UA
                  os="win",  # Generate only Windows platform
                  headers=True)
 
-class ebay_top3(scrapy.Spider):
-    name = 'ebay_top3'
+class EbayTopSpider(scrapy.Spider):
+    name = 'ebay_top2'
     custom_settings = {
         'CONCURRENT_REQUESTS': 16,
         'FEED_FORMAT': 'csv',
