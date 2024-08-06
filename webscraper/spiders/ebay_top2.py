@@ -19,7 +19,7 @@ class EbayTop2Spider(scrapy.Spider):
         'FEED_EXPORT_ENCODING': "utf-8"
     }
     headers = {
-        'authority': 'www.ebay.com',
+        'authority': 'www.ebay.co.uk',
         'upgrade-insecure-requests': '1',
         'user-agent': header.generate()['User-Agent'],
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -28,7 +28,7 @@ class EbayTop2Spider(scrapy.Spider):
         'sec-fetch-mode': 'navigate',
         'sec-fetch-user': '?1',
         'sec-fetch-dest': 'document',
-        'accept-language': 'en-US,en;q=0.9',
+        'accept-language': 'en-GB,en;q=0.9',
     }
 
     proxy = 'http://xavigv:ee3ee0580b725494_country-UnitedKingdom@proxy.packetstream.io:31112'
